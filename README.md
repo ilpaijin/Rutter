@@ -11,31 +11,31 @@ A simple Router class
     <?php
         require_once 'vendor/autoload.php';
     
-    	$request = new Rutter\Request($_SERVER);
+        $request = new Rutter\Request($_SERVER);
     
-    	$rutter = new Rutter\Router($request);
+        $rutter = new Rutter\Router($request);
     
-    	$rutter->get('/', function($r)
-    	{
-    		echo 'rutt';
-    	});
+        $rutter->get('/', function($r)
+        {
+            echo 'rutt';
+        });
     
-    	$rutter->get('/ciao/:id', 'asd');
+        $rutter->get('/ciao/:id', 'asd');
     
-    	$rutter->post('/', function($rutt)
-    	{
-    		var_dump($rutt->getRequest());
-    	});
+        $rutter->post('/', function($rutt)
+        {
+            var_dump($rutt->getRequest());
+        });
     
     
-    	try 
-    	{
-    		echo $rutter->rutta();	
-    	}
-    	catch(Exception $e)
-    	{
-    		echo $e->getMessage();
-    	}
+        try 
+        {
+            echo $rutter->rutta();  
+        }
+        catch(Exception $e)
+        {
+            echo $e->getMessage();
+        }
 
 ## License
 MIT Licensed, http://www.opensource.org/licenses/MIT
