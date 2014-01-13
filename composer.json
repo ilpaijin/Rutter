@@ -1,0 +1,9 @@
+{
+    "name": "Rutto Router v 0.1.0",
+    "author": "ilpaijin@gmail.com",
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    }
+}
