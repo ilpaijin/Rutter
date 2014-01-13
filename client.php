@@ -11,7 +11,10 @@ $rutter->get('/', function($r)
 	echo 'rutt';
 });
 
-$rutter->get('/ciao/:id', 'asd');
+$rutter->get('/ciao', function()
+{
+	echo 'ciao';
+});
 
 $rutter->post('/', function($rutt)
 {
